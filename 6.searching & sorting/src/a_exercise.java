@@ -6,8 +6,6 @@ class Book{
         this.author=author;
         this.ISBN=ISBN;
     }
-    //Further equip this class with another
-    //constructor that takes as its argument a Book object
     Book(Book objectDExample){
     	/*Further equip this class with another
     	 *constructor that takes as its argument a Book object
@@ -62,7 +60,7 @@ class a_exercise{
         BookByAuthor(array,str);
     }
 }
-/*Consider a collection of books in a library with each book modeled by its
+/*QUESTION:Consider a collection of books in a library with each book modeled by its
 (1) title, (2) author(s) and (3) ISBN unique number. Provide a class Book
 with an appropriate constructor. Further equip this class with another
 constructor that takes as its argument a Book object. Consider an array
