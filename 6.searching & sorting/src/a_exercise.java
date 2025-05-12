@@ -6,6 +6,16 @@ class Book{
         this.author=author;
         this.ISBN=ISBN;
     }
+    //Further equip this class with another
+    //constructor that takes as its argument a Book object
+    Book(Book objectDExample){
+    	/*Further equip this class with another
+    	 *constructor that takes as its argument a Book object
+    	 *don't really know what is required here*/
+    }
+    public String toString(){
+    	return title +","+","+ author+","+"(ISBN:"+ISBN+")";
+    }
 }
 class a_exercise{
 	static boolean sequencialSearch(Book array[],int query) {
@@ -18,22 +28,27 @@ class a_exercise{
 		}
 		return result;
 	}
-	static Book [] BookByAuthor(Book array[],String str) {
+	static Book []BookByAuthor(Book array[],String str) {
 		//that given a string storing an author name,collects all books written by the author
-		Book authorBooks[];
-		for(int i=0;i<array.length-1;++i) {
-			if(sequentialSearch()==true) {
-				
+		int aB =0;
+		Book []authorBooks;
+		authorBooks =new Book[4];
+		for(int i=0;i<array.length;++i) {
+			if(array[i].author.contains(str)) {
+				//we want store to the authorBook variable up there
+				//collects all books written by the author			
+				System.out.println(authorBooks[aB]= new Book(array[i].title,array[i].author,array[i].ISBN));
+				aB++;
 			}
 		}
-		
+		return authorBooks;
 	}
-    public static void main(String args[]){
+	public static void main(String args[]){
         //provide a list of the models
-    	int query=2;
-    	String str="Dostoevsky";
+    	int query=0;
+    	String str="Piper";
         Book array[];
-        array =new Book[10];
+        array =new Book[9];
         array[0]=new Book("Crime and punishment", "Fyodor Dostoevsky", 0);
         array[1]=new Book("Notes from the underground","Fyodor Dostoevsky", 1);
         array[2]=new Book("I dream of dog's", "Samantha Mackulin", 3);
@@ -44,7 +59,7 @@ class a_exercise{
         array[7]=new Book("The Idiot","Fyodor Dostoevsky",7);
         array[8]=new Book("Toast in the machine", "Samantha Mackulin", 8);
         System.out.println(sequencialSearch(array,query));
-        System.out.println(BookByAuthor(array,str));
+        BookByAuthor(array,str);
     }
 }
 /*Consider a collection of books in a library with each book modeled by its
