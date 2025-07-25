@@ -1,3 +1,4 @@
 GitRepositoriesView.GitDirectories=/home/ericmathai/eclipse-workspace/dogo/.git\:/home/ericmathai/eclipse-workspace/.git\:
 GitRepositoriesView.GitDirectories.relative=dogo/.git\:.git\:
+core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1
