@@ -9,7 +9,7 @@ class cities{
 		return new cities(name,referenceNext);
 	}
 	public String toString() {
-		return name;
+		return name + referenceNext;
 		
 	}
 	static int lllength(cities africanCpts) {
@@ -38,26 +38,29 @@ class cities{
 		}
 		return result;
 		}
-	static  cities removeElmnt(String remove,cities africanCpts) {//we returning the object
-		//case:if there is no such element 
-		//another thing i'll probably,should ask is if we should be using the 'holistic' object
-		if(africanCpts==null)
+	static  cities removeElmnt(String delete,cities africanCpts) {	
+		/*the query of the String or item to be removed
+		 * 
+		 * */
+		if(africanCpts==null) {
 			return null;
-		//what is the other case, if it's the head, for me have a way to remove the thing completely, but here hapa they just return the adjacent element
-		//was about to ask, i don't know if this case means its the only element??
-		if(africanCpts.name.equals(remove))
-			return africanCpts.referenceNext;//yeah, that what they've said we are to return. i think this is the case when its alone without needing of surgery. i think??
-		//yeah, what is the other case???. he represents a head and the tail with variables then goes into a loop or something<-no this isn't helping
-		cities w=africanCpts;//oaky, this has some questions to answer later
-		cities v=africanCpts.referenceNext;//so yeah this is/are the references->i agree_/ does it mean the one up there is the head/represents the head???
-		//okay
-		while(w!=null&&!(w.name.equals(remove))) {//we need some conceptulization of this
-		v=w;
-		w=v.referenceNext;
-		if(w!=null)
-			v.referenceNext=w.referenceNext;
-			
-	}
+		}
+		if(africanCpts.name.equals(delete)) {
+			return africanCpts.referenceNext;
+		}
+		while(africanCpts!=null) {
+			cities citiesHold=africanCpts;
+			cities nextHold=africanCpts.referenceNext;
+			if(africanCpts.name.equals(delete )) {
+				citiesHold=nextHold;
+				nextHold=citiesHold.referenceNext;				
+			}
+			if(nextHold!=null) {
+				citiesHold.referenceNext=nextHold.referenceNext;
+			}
+			//a way to transerve first at the bottom, we are deleting and deleting seems like cahnging things then the garbage thing will do its thing
+			africanCpts=africanCpts.referenceNext;		
+		}
 		return africanCpts;
 
 	}
@@ -76,7 +79,12 @@ public class trialonUnderstanding {
 	africanCpts=cities.insert("Mogadishu",africanCpts);
 	africanCpts=cities.insert("Juba",africanCpts);
 	africanCpts=cities.insert("Dodoma",africanCpts);
-	System.out.println(cities.listElements(africanCpts)+"\n"+"length:"+cities.lllength(africanCpts));
+	System.out.println(cities.listElements(africanCpts));
+	String delete="Kigali"; //and the thing should work if it first, if there is a null extra
+	cities.removeElmnt(delete,africanCpts);//we want to find a an object and remove it
+	System.out.println("Now");
+	System.out.println(cities.listElements(africanCpts));
+	
 }
 }
 //mehn! whatever for now
