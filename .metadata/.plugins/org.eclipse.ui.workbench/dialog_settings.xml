@@ -1,17 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_WIDTH" value="525"/>
+		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_WIDTH" value="870"/>
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_HEIGHT" value="608"/>
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_SIZE" value="true"/>
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_LOCATION" value="false"/>
 		<list key="orderedElements">
+			<item value="search.in.help"/>
+			<item value="org.eclipse.jdt.ui.preferences.JavaEditorPreferencePage"/>
+			<item value="org.eclipse.jdt.ui.preferences.AppearancePreferencePage"/>
+			<item value="org.eclipse.ui.navigator.ProjectExplorer"/>
+			<item value="org.eclipse.ui.preferencePages.ColorsAndFonts"/>
+			<item value="org.eclipse.ui.preferencePages.Views"/>
+			<item value="org.eclipse.ui.edit.text.zoomIn"/>
 		</list>
 		<list key="orderedProviders">
+			<item value="search.help"/>
+			<item value="org.eclipse.ui.preferences"/>
+			<item value="org.eclipse.ui.preferences"/>
+			<item value="org.eclipse.e4.ui.parts"/>
+			<item value="org.eclipse.ui.preferences"/>
+			<item value="org.eclipse.ui.preferences"/>
+			<item value="org.eclipse.ui.commands"/>
 		</list>
 		<list key="textEntries">
+			<item value="1"/>
+			<item value="2"/>
+			<item value="1"/>
+			<item value="1"/>
+			<item value="1"/>
+			<item value="1"/>
+			<item value="1"/>
 		</list>
 		<list key="textArray">
+			<item value="uncommitted"/>
+			<item value="background"/>
+			<item value="foreground"/>
+			<item value="explorer"/>
+			<item value="project"/>
+			<item value="font"/>
+			<item value="themes"/>
+			<item value="zoom"/>
 		</list>
 	</section>
 	<section name="NewWizardAction">
@@ -32,10 +61,10 @@
 		</section>
 	</section>
 	<section name="WorkbenchPreferenceDialog.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="146"/>
+		<item key="DIALOG_X_ORIGIN" value="307"/>
 		<item key="DIALOG_Y_ORIGIN" value="0"/>
-		<item key="DIALOG_WIDTH" value="1080"/>
-		<item key="DIALOG_HEIGHT" value="593"/>
+		<item key="DIALOG_WIDTH" value="790"/>
+		<item key="DIALOG_HEIGHT" value="728"/>
 		<item key="DIALOG_FONT_NAME" value="1|Ubuntu Sans|11.0|0|GTK|1|"/>
 	</section>
 </section>

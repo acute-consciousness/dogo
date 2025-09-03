@@ -8,7 +8,7 @@ public class maureen {
 	static maureen insertAtt(String s,maureen nxt) {
 		return new maureen(s,nxt);
 	}
-	public String tostringAgain() {//don't undersand but the 'cramming' is no static keyword(okay) and no arguement(okay) but i do not know if i will remember this
+	public String tostringAgain() {
 	return human;	
 	}
 	static int reclistLngth(maureen objIdt) {

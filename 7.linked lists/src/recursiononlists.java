@@ -1,4 +1,4 @@
-public class recursiononlists {
+public class recursiononlists {	
 public static void main(String [] args) {
 	maureen humanAtt = null;
 	humanAtt = maureen.insertAtt("Trust",humanAtt);
@@ -16,11 +16,12 @@ public static void main(String [] args) {
 	humanAtt = maureen.insertAtt("Natural",humanAtt);
 	humanAtt = maureen.insertAtt("Pleasing",humanAtt);	
 //	System.out.println(maureen.reclistLngth(humanAtt));
-	System.out.println("the normal display i think");
-	System.out.println();
-	System.out.println(maureen.display(humanAtt));
-	System.out.println();
-	System.out.println("the normal recursive display");
-	maureen.recDisplay(humanAtt);
+//	System.out.println("the normal display i think");
+//	System.out.println();
+//	System.out.println(maureen.display(humanAtt));
+//	System.out.println();
+//	System.out.println("the normal recursive display");
+//	maureen.recDisplay(humanAtt);
+	cloningObjects.theFtodoallThis(humanAtt);
 }
 }
