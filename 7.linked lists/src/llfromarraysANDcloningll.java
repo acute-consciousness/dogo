@@ -38,7 +38,8 @@ class veges{
 		}
 		return displayelements(newlycreated);
 	}
-	static String recclone(veges linkedlist) {
+	//this was to clone but come back, weeks later and don't get, never have been able to implement cloning ll though: so something to note
+	/*static void recclone(veges linkedlist) {
 		veges recursivelynewlyCreated=null;		
 		if(linkedlist==null)
 			return null;
@@ -49,6 +50,7 @@ class veges{
 		}	
 		}
 	}
+	*/
 }
 public class llfromarraysANDcloningll {
 public static void main(String args[]) {
@@ -56,6 +58,6 @@ public static void main(String args[]) {
 //	All outputs don't have one element
 	System.out.println(veges.llfromarrays(vegetables));
 	System.out.println(veges.clonebutinverted(veges.linkedlist));
-	System.out.println(veges.recclone(veges.linkedlist));
+//	System.out.println(veges.recclone(veges.linkedlist));
 }
 }
